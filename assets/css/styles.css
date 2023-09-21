@@ -58,6 +58,7 @@ body{
 .navbar{
     background-color: var(--secondary);
     padding: 1em 2em;
+    transition: all 250ms ease-in-out;
 }
 
 .nav-ul{
