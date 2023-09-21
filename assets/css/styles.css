@@ -8,6 +8,8 @@
     --primary: lightblue;
     --secondary: dodgerblue;
     --boldface: 600;
+    --primarytxt: black;
+    --herocolor: rgb(116, 116, 255);
 }
 
 body{
@@ -22,8 +24,6 @@ body{
 
 .nav-ul{
     display: flex;
-    /* width: 30%;
-    margin: 0 auto; */
     flex-direction: column;
     gap: .5em;
     align-content: center;
@@ -62,7 +62,7 @@ body{
 }
 
 .hero{
-    background-color: rgb(116, 116, 255);
+    background-color: var(--herocolor);
     padding: 1em 2em;
     color: white;
     margin-bottom: 1em;
@@ -79,12 +79,14 @@ body{
     max-width: 700px;
 }
 
-.hero-text, .txt-center, .about{
+.card{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+    gap: 1em;
+}
+
+.hero-text,
+.txt-center{
     text-align: center;
 }
 
@@ -107,12 +109,51 @@ body{
     border-radius: 2em;
     font-size: 1.1rem;
     font-weight: var(--boldface);
-    color: rgb(116, 116, 255);
+    color: var(--herocolor);
     box-shadow: 0 2px 2px 0px rgba(9, 9, 9, 0.345);
 }
 
 .about-us, .mission, .vission{
-    padding: 1em 2em;
-    
+    padding: 1em 2em;   
 }
 
+.services{
+    background-color: var(--secondary);
+}
+
+.services-container{
+    background-color: var(--herocolor);
+    padding: 2em 2em;
+}
+
+.service-item{
+    margin-bottom: 1em;
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.333);
+    border-radius: 1rem;
+}
+
+
+
+.service-item h4, p, a{
+    display: block;
+    margin: .5rem 0;
+}
+
+.service-item a{
+    text-decoration: none;
+    outline: 1px solid var(--secondary);
+    border-radius: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    padding: .5rem;
+    color: var(--primarytxt);
+    transition: all 250ms ease-in-out;
+}
+
+.service-item a:active, a:hover, a:focus{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.333);
+    background-color: var(--secondary);
+    color: white;
+}
