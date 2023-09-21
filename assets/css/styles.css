@@ -1,28 +1,41 @@
-*, ::after, ::before{
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary: lightblue;
     --secondary: dodgerblue;
     --boldface: 600;
     --primarytxt: black;
     --herocolor: rgb(116, 116, 255);
+    --black: #000000;
+    --Teal: #008080;
+    --SkyBlue: #87CEEB;
+    --LightGreen: #90EE90;
+    --Orange: #FFA500;
+    --Gold: #FFD700;
+    --LightGray: #D3D3D3;
+    --CharcoalGray: #333333;
+    --Crimson: #DC143C;
+    --Lime: #00FF00;
+    --Light: #ffffff;
 }
 
-body{
+body {
     background-color: var(--primary);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-/* Hide the navbar by default */
+
 #navbar {
     display: none;
 }
 
-/* Style for the hamburger button */
+
 .hamburger-button {
     background: none;
     border: none;
@@ -38,7 +51,7 @@ body{
     transition: 0.4s;
 }
 
-/* Styles for showing the navbar when the button is clicked */
+
 #navbar.active {
     display: block;
 }
@@ -55,13 +68,13 @@ body{
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.navbar{
+.navbar {
     background-color: var(--secondary);
     padding: 1em 2em;
     transition: all 250ms ease-in-out;
 }
 
-.nav-ul{
+.nav-ul {
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -69,12 +82,12 @@ body{
     justify-content: center;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
     width: max-content;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     text-align: left;
     color: var(--secondary);
@@ -83,64 +96,64 @@ body{
     background-color: var(--primary);
     padding: .2em 1em;
     width: 100%;
-    border-radius: 2em; 
+    border-radius: 2em;
     transition: all 250ms;
 }
 
 .nav-link:focus,
-.nav-link:active, 
-.nav-link:hover{
+.nav-link:active,
+.nav-link:hover {
     padding: .2em 2em;
     background-color: orange;
     color: black;
 }
 
 
-.container{
+.container {
     background-color: wheat;
 }
 
-.hero{
+.hero {
     background-color: var(--herocolor);
     padding: 1em 2em;
     color: white;
     margin-bottom: 1em;
 }
 
-.hero-illustrations{
+.hero-illustrations {
     padding: 2em;
     display: flex;
     align-items: center;
 }
 
-.hero-illustrations img{
+.hero-illustrations img {
     width: 100%;
     max-width: 700px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
 .hero-text,
-.txt-center{
+.txt-center {
     text-align: center;
 }
 
-.leading-text{
+.leading-text {
     font-size: 5vmax;
     margin-bottom: .5rem;
     font-weight: var(--boldface);
 }
 
-.subtitle-text{
+.subtitle-text {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
-.cta-btn{
+.cta-btn {
     display: inline-block;
     text-decoration: none;
     background-color: var(--primary);
@@ -152,20 +165,22 @@ body{
     box-shadow: 0 2px 2px 0px rgba(9, 9, 9, 0.345);
 }
 
-.about-us, .mission, .vission{
-    padding: 1em 2em;   
+.about-us,
+.mission,
+.vission {
+    padding: 1em 2em;
 }
 
-.services{
+.services {
     background-color: var(--secondary);
 }
 
-.services-container{
+.services-container {
     background-color: var(--herocolor);
     padding: 2em 2em;
 }
 
-.service-item{
+.service-item {
     margin-bottom: 1em;
     background-color: rgb(255, 255, 255);
     padding: 2em;
@@ -175,12 +190,14 @@ body{
 
 
 
-.service-item h4, p, a{
+.service-item h4,
+p,
+a {
     display: block;
     margin: .5rem 0;
 }
 
-.service-item a{
+.service-item a {
     text-decoration: none;
     outline: 1px solid var(--secondary);
     border-radius: 2rem;
@@ -191,8 +208,53 @@ body{
     transition: all 250ms ease-in-out;
 }
 
-.service-item a:active, a:hover, a:focus{
+.service-item a:active,
+a:hover,
+a:focus {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.333);
     background-color: var(--secondary);
     color: white;
 }
+
+
+.testimonials {
+    background-color: var(--LightGreen);
+    padding: 2em 0;
+}
+
+.testimonials-content{
+    padding: 1rem 2rem;
+    width: 80%;
+    margin: 1rem auto;
+    background-color: var(--Light);
+    border-radius: 2em;
+    box-shadow: 0 2px 2px 0 var(--black);
+}
+
+.testimonial{
+    padding: .5rem 0;
+ 
+}
+
+
+
+.testimonial > div{
+    display: flex;
+    gap: .5rem;
+    flex-direction: row;
+    align-content: start;
+    justify-content: start;
+    align-items: center;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+
+.testimonial img{
+    display: inline;
+    width: 20%;
+    border-radius: 10em;
+    background-color: var(--LightGreen);
+}
+
+
