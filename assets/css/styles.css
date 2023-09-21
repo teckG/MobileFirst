@@ -1,0 +1,118 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: lightblue;
+    --secondary: dodgerblue;
+    --boldface: 600;
+}
+
+body{
+    background-color: var(--primary);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.navbar{
+    background-color: var(--secondary);
+    padding: 1em 2em;
+}
+
+.nav-ul{
+    display: flex;
+    /* width: 30%;
+    margin: 0 auto; */
+    flex-direction: column;
+    gap: .5em;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav-item{
+    list-style: none;
+    width: max-content;
+}
+
+.nav-link{
+    text-decoration: none;
+    text-align: left;
+    color: var(--secondary);
+    font-weight: 600;
+    display: inline-block;
+    background-color: var(--primary);
+    padding: .2em 1em;
+    width: 100%;
+    border-radius: 2em; 
+    transition: all 250ms;
+}
+
+.nav-link:focus,
+.nav-link:active, 
+.nav-link:hover{
+    padding: .2em 2em;
+    background-color: orange;
+    color: black;
+}
+
+
+.container{
+    
+}
+
+.hero{
+    background-color: rgb(116, 116, 255);
+    padding: 1em 2em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.hero-illustrations{
+    padding: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.hero-illustrations img{
+    width: 100%;
+    max-width: 700px;
+}
+
+.hero-text, .txt-center, .about{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.leading-text{
+    font-size: 5vmax;
+    margin-bottom: .5rem;
+    font-weight: var(--boldface);
+}
+
+.subtitle-text{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary);
+    padding: 1em 3em;
+    border-radius: 2em;
+    font-size: 1.1rem;
+    font-weight: var(--boldface);
+    color: rgb(116, 116, 255);
+    box-shadow: 0 2px 2px 0px rgba(9, 9, 9, 0.345);
+}
+
+.about-us, .mission, .vission{
+    padding: 1em 2em;
+    
+}
+
