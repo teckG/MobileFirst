@@ -17,6 +17,44 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+/* Hide the navbar by default */
+#navbar {
+    display: none;
+}
+
+/* Style for the hamburger button */
+.hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-bar {
+    background-color: var(--secondary);
+    height: 3px;
+    width: 30px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Styles for showing the navbar when the button is clicked */
+#navbar.active {
+    display: block;
+}
+
+#hamburger-button.active .hamburger-bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#hamburger-button.active .hamburger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-button.active .hamburger-bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .navbar{
     background-color: var(--secondary);
     padding: 1em 2em;

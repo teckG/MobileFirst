@@ -4,23 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>teckGenius</title>
     <link href="assets/css/uicons-thin-straight.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+   
 </head>
 
 <body>
+    <button class="hamburger-button" id="hamburger-button">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+    </button>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul class="nav-ul">
                 <li class="nav-item">
-                    <a href="#" class="nav-link"> 
+                    <a href="#home" class="nav-link"> 
                         <span class="fi-ts-house-chimney"></span> Home
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link"> 
-                        <span class="fi-ts-person-praying"></span> Pray
+                        <span class="fi-ts-person-praying"></span> Portfolio
                     </a>
                 </li>
                 <li class="nav-item">
@@ -30,7 +36,22 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link"> 
-                        <span class="fi-ts-signal-stream"></span> Login
+                        <span class="fi-ts-phone-call"></span> About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                        <span class="fi-ts-signal-stream"></span> Resume
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                        <span class="fi-ts-signal-stream"></span> Testimonials
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                        <span class="fi-ts-signal-stream"></span> Contact
                     </a>
                 </li>
             </ul>
@@ -38,8 +59,8 @@
     </header>
 
     <main class="container">
-        <section class="hero">
-            <div class="hero-illustrations">
+        <section class=" hero">
+            <div class="card hero-illustrations">
                 <img src="assets/images/teamwork high five-amico.svg" alt="An hero image">
             </div>
             <div class="hero-text">
@@ -51,7 +72,7 @@
             </div>
         </section>
 
-        <section class="card about">
+        <section id="home" class="card about">
             <div class="two-col-grid">
                 <div class="imagery">
                     <img src="assets/images/college students-pana.svg" alt="image">
@@ -148,7 +169,7 @@
         </section>
 
     </main>
-
+    <script src="/assets/js/hamburger.js"></script>
 </body>
 
 </html>
