@@ -279,18 +279,10 @@ a:focus {
     margin: .5rem 0;
 }
 
-.resume-header{
-    /* background-color: var(--Light); */
-    /* border-radius: .5rem; */
-}
+
 
 .resume-header>*{
     display: inline-block;
-}
-
-.resume-objective{
-    /* background-color: var(--herocolor);
-    color: var(--Light); */
 }
 
 .resume-content >div h3{
