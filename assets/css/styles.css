@@ -258,6 +258,56 @@ a:focus {
 }
 
 
+.resume {
+    background-color: var(--Teal);
+    padding: 2rem 0;
+}
 
 
+.resume .leading-text{
+    color: var(--Light);
+}
 
+.resume-content{
+    padding: 0 2rem;
+}
+
+
+.resume-content > div{
+    padding: 1rem 2rem;
+    background-color: var(--Light);
+    margin: .5rem 0;
+}
+
+.resume-header{
+    /* background-color: var(--Light); */
+    /* border-radius: .5rem; */
+}
+
+.resume-header>*{
+    display: inline-block;
+}
+
+.resume-objective{
+    /* background-color: var(--herocolor);
+    color: var(--Light); */
+}
+
+.resume-content >div h3{
+    text-align: center;
+    border-bottom: .2rem solid var(--black);
+    margin-bottom: .5rem; 
+}
+
+
+.resume-content >div ul{
+    padding: .8rem 1rem;
+}
+
+.resume-content >div ul li{
+    list-style: square;
+}
+
+.references{
+    word-wrap: break-word;
+}
