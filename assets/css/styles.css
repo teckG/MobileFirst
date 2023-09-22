@@ -27,7 +27,8 @@
 
 body {
     background-color: var(--primary);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 
@@ -233,7 +234,6 @@ a:focus {
 
 .testimonial{
     padding: .5rem 0;
- 
 }
 
 
@@ -256,5 +256,8 @@ a:focus {
     border-radius: 10em;
     background-color: var(--LightGreen);
 }
+
+
+
 
 
