@@ -147,6 +147,7 @@ body {
     background-color: rgba(255, 255, 255, 0.399);
     aspect-ratio: 1/1;
     object-fit: cover;
+    
 }
 
 
@@ -188,6 +189,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 0 2rem;
+    font-size: 1.1rem;
 }
 
 
@@ -216,6 +218,7 @@ body {
     font-weight: var(--boldface);
     box-shadow: 0 2px 2px 0px rgba(9, 9, 9, 0.345);
     text-align: center;
+    width: -moz-fit-content;
     width: fit-content;
     align-self: center;
     transition: background-color 200ms ease-in-out;
@@ -227,8 +230,16 @@ body {
     background-color: var(--secondary);
 }
 
+
 .vission {
     padding: 3rem 0;
+    font-size: 1.1rem;
+}
+
+.imagery{
+    width: 80%;
+    margin: 0 auto;
+   
 }
 
 .services {
@@ -298,50 +309,70 @@ a:focus {
     color: white;
 }
 
-
-.testimonials {
-    background-color: var(--LightGreen);
-    padding: 2em 0;
+.border-b{
+    border-bottom: 3px solid rgb(7, 144, 182);
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
-.testimonials-content {
-    padding: 1rem 2rem;
-    width: 80%;
-    margin: 1rem auto;
+.testimony-container{
+    padding: 2rem;
     background-color: var(--Light);
-    border-radius: 2em;
-    box-shadow: 0 2px 2px 0 var(--black);
 }
 
-.testimonial p {
-    padding: .6rem 0;
-}
-
-.testimonial {
-    padding: .5rem 0;
-}
-
-
-
-.testimonial>div {
+.testimony{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.526);
+    border-radius: 1rem;
+    padding: 2.5rem 3rem;
     display: flex;
-    gap: .5rem;
-    flex-direction: row;
-    align-content: start;
-    justify-content: start;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     align-items: center;
-    font-weight: 600;
-    font-size: .9rem;
+    box-shadow:  0 2px 5px 0 var(--LightGray);
+    margin-bottom: 1rem;
+}
+
+.testimony-img{
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    outline: 1px solid var(--Orange);
+    border-radius: 9rem;   
+    object-fit: cover;
+    background-color: var(--Orange);
+    box-shadow: 0 2px 10px 0 var(--black);
 }
 
 
-.testimonial img {
-    display: inline;
-    width: 20%;
-    border-radius: 10em;
-    background-color: var(--LightGreen);
+
+.testimony h4{
+    font-size: 1.2rem;
+    padding: .6rem .5rem;
+    color: var(--Light);
 }
 
+.name{
+    color: var(--Orange);
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.quote{
+    color: var(--Crimson);
+    font-size: xx-large;
+}
+
+.testimony p{
+    text-align: center;
+    color: var(--Light);
+}
+
+.ratings{
+    padding: .5rem;
+    color: var(--Orange);
+}
 
 .resume {
     background-color: var(--Teal);
@@ -409,3 +440,131 @@ a:focus {
 .education li {
     margin-top: 1rem;
 }
+
+/* Media Queries */
+
+/* Styles for screens wider than 576px (small tablets, etc.) */
+@media (min-width: 576px) {
+    body{
+        background-color: var(--Light);
+    }
+
+
+    .hero {
+        padding: 1rem 6rem;
+    }
+
+    .hero-illustrations {
+        padding: 1rem 2rem;
+    }
+   
+    .hero-illustrations img {
+        width: 90%;
+        border-radius: 20rem;
+    }
+    
+    .leading-text {
+        font-size: 8vmax;
+        margin-bottom: .5rem;
+    }
+    .subtitle-text {
+        width: 90%;
+        padding: 0 2.1rem;
+        font-size: 1.2rem;
+    }
+    .cta-btn{
+        margin-top: 1rem;
+        width: 80%;
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
+
+    .imagery{
+        width: 80%;
+    }
+
+    .vission{
+        font-size: 1.2rem; 
+    }
+
+    
+
+
+.services {
+    padding: 2em 3.5rem;
+}
+
+
+.service-item {
+    font-size: 1.2rem;
+    padding: 3em 4em;
+    
+}
+
+
+.service-icon {
+    background-color: transparent;
+    color: var(--black);
+    font-size: 2.5rem;
+}
+    
+.testimonial{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.testimonials-content {
+    padding: 2rem 3rem;
+    
+}
+
+.testimonial p {
+    padding: 3rem 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+
+.testimonial img {
+    position: absolute;
+    top: -20px;
+    min-width: 12%;
+    max-width: 10vw;
+    display: block;
+}
+
+.name-ratings{
+    text-align: center;
+    max-width:fit-content;
+    max-width: -moz-fit-content;
+    margin: 0 auto;
+}
+
+}
+
+  /* Styles for screens wider than 768px (larger tablets, landscape view)
+        Additional styles for medium screens */
+  @media (min-width: 768px) {
+    body{
+        background-color: var(--Gold);
+    }
+  }
+  
+  /* Styles for screens wider than 992px (desktops)
+         Additional styles for large screens (desktops) */
+  @media (min-width: 992px) {
+    body{
+        background-color: var(--Orange);
+    }
+  }
+  
+
+
+  
