@@ -302,8 +302,8 @@ a {
 }
 
 .service-item a:active,
-a:hover,
-a:focus {
+.service-item a:hover,
+.service-item a:focus {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.333);
     background-color: var(--secondary);
     color: white;
@@ -440,6 +440,54 @@ a:focus {
 .education li {
     margin-top: 1rem;
 }
+
+
+.contact{
+    padding: 4rem 3rem;
+    background-color: var(--Gold);
+}
+
+/* Footer */
+
+
+
+.footer-container{
+    padding: 4rem 3rem;
+}
+
+.row{
+
+}
+
+.col{
+    padding: 1rem;
+}
+
+.col ul li{
+    list-style: none;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+
+.col ul li a{
+    color: var(--Crimson);
+    text-decoration: none;
+}
+
+
+.col ul li a:hover{
+    color: var(--Crimson);
+    text-decoration: none;
+}
+
+
+#social-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+
 
 /* Media Queries */
 
